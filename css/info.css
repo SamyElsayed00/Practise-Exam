@@ -1,0 +1,316 @@
+:root {
+  --blue-color: #0075ff;
+  --blue-alt-color: #0d69d5;
+  --orange-color: #f59e0b;
+  --green-color: #22c55e;
+  --red-color: #f44336;
+  --grey-color: #888;
+}
+.main-content {
+  width: 100%;
+  max-width: 1400px;
+  margin-inline: auto;
+  margin-top: 20px;
+}
+.container {
+  padding-inline: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-content .container {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .main-content .container {
+    flex-direction: column-reverse;
+  }
+}
+.main-content .container h2 {
+  margin-bottom: 20px;
+}
+/*  Media Query */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* Start Heading */
+.heading .container {
+  border-bottom: 2px solid #ddd;
+  padding: 10px;
+}
+.user-header {
+  text-align: center;
+  margin: 20px;
+  margin-top: 55px;
+}
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #4caf50;
+}
+.user-header > h1 {
+  margin: 0;
+  font-size: 25px;
+}
+
+.btn {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+}
+.follow-btn {
+  background-color: #4caf50;
+  color: white;
+}
+.message-btn {
+  background-color: #008cba;
+  color: white;
+}
+
+.user-stats {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.user-stats div {
+  text-align: center;
+}
+/* End Heading */
+
+/* Start Post Style */
+.main-content .posts {
+  flex: 1;
+  flex-basis: 60%;
+}
+.main-content .posts .post {
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+.main-content .posts .post .name {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+.main-content .posts .post .name img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.main-content .posts .post .name span:first-of-type {
+  font-size: 18px;
+}
+.main-content .posts .post .name span:last-of-type {
+  font-size: 14px;
+  color: var(--grey-color);
+  margin-left: auto;
+}
+.main-content .posts .post .details {
+  position: relative;
+}
+.main-content .posts .post .details p {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.main-content .posts .post .details .images {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-content .posts .post .details .btns button:first-of-type {
+  margin-top: 15px;
+  border: none;
+  background-color: var(--blue-color);
+  padding: 8px 14px;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.main-content .posts .post .details .btns button:last-of-type {
+  margin-top: 15px;
+  border: none;
+  background-color: var(--grey-color);
+  padding: 8px 14px;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.main-content .posts .post .details .btns button i {
+  margin-right: 10px;
+}
+.main-content .posts .post .details input {
+  font-size: 16px;
+  width: 100%;
+  margin-top: 15px;
+  padding: 6px 10px;
+  outline-color: var(--orange-color);
+}
+.main-content .posts .post .details .send {
+  position: absolute;
+  right: 10px;
+  bottom: 8px;
+  font-size: 14px;
+  color: var(--blue-color);
+  cursor: pointer;
+}
+/* End Post Style */
+
+/* Start About - Info*/
+.main-content .container .about {
+  flex: 1;
+  flex-basis: 30%;
+}
+.main-content .container .about .info {
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+.main-content .container .about .info > p {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.main-content .container .about .info .info-row {
+  display: flex;
+  align-items: center;
+}
+.main-content .container .about .info .info-row:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+.main-content .container .about .info .info-row img {
+  width: 18px;
+}
+.main-content .container .about .info .info-row p {
+  font-size: 14px;
+  margin-left: 10px;
+}
+.main-content .container .about .friends {
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+.main-content .container .about .friends .text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.main-content .container .about .friends .text p {
+  font-weight: bold;
+}
+.main-content .container .about .friends .text a {
+  color: var(--blue-color);
+  transition: 0.3s;
+}
+.main-content .container .about .friends .text a:hover {
+  text-decoration: underline;
+}
+.main-content .container .about .friends span {
+  display: block;
+  color: var(--grey-color);
+  margin-bottom: 10px;
+}
+.main-content .container .about .friends .friends-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 15px;
+}
+
+.main-content .container .about .friends .friend-box img {
+  width: 100px;
+  height: 100px;
+  border-radius: 7px;
+}
+.main-content .container .about .friends .friend-box.plus{
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.main-content .container .about .friends .friend-box .plus{
+  font-size: 30px;
+}
+.main-content .container .about .friends .friend-box p {
+  font-size: 13px;
+}
+.main-content .container .about .gallery {
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+.main-content .container .about .gallery .text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.main-content .container .about .gallery .text > p {
+  font-weight: bold;
+}
+.main-content .container .about .gallery .text a {
+  color: var(--blue-color);
+  transition: 0.3s;
+}
+.main-content .container .about .gallery .text a:hover {
+  text-decoration: underline;
+}
+.main-content .container .about .gallery .images-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 5px;
+}
+.main-content .container .about .gallery .image-box img {
+  width: 100px;
+  height: 100px;
+  border-radius: 7px;
+}
+.main-content .container .about .gallery .image-box.plus{
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.main-content .container .about.gallery .image-box .plus{
+  font-size: 30px;
+}
+/* End About - Info*/

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Media</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="./index.html" class="active">
+          <i class="fa fa-home logo"></i>
+          <p class="logo-word">Logo</p>
+        </a>
+        <a href="#" title="News" class="nav-link">
+          <i class="fa-solid fa-globe"></i>
+        </a>
+        <a href="#" title="Settings" class="nav-link">
+          <i class="fa-solid fa-gear"></i>
+        </a>
+        <a href="#" title="Messages" class="nav-link">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+        <div class="dropdown" title="Notification">
+          <a href="#" class="nav-link">
+            <i class="fa-solid fa-bell"></i>
+            <span>3</span>
+          </a>
+          <div class="list">
+            <a href="#">One New Friend Request</a>
+            <a href="#">Said Likes Your Post</a>
+            <a href="#">Ziad Shared Your Video</a>
+          </div>
+        </div>
+        <div class="user-dropdown">
+          <a href="#" class="avatar" title="My Account">
+            <img src="imgs/team-1.jpg" alt="" />
+          </a>
+          <div class="user-list">
+            <a href="pages/user-info.html"
+              ><i class="fa-solid fa-id-card"></i>User Info</a
+            >
+            <a href="pages/user-cv.html"
+              ><i class="fa-solid fa-file-lines"></i>User CV</a
+            >
+            <a href="pages/user-works.html"
+              ><i class="fa-solid fa-folder-open"></i>User Works</a
+            >
+            <a href="pages/login.html"
+              ><i class="fa-solid fa-right-from-bracket"></i> Log Out</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="main-content">
+      <div class="container">
+        <div class="left-row">
+          <div class="profile">
+            <h4>My Profile</h4>
+            <img src="imgs/team-1.jpg" alt="" />
+            <div class="info">
+              <div class="info-row">
+                <i class="fa fa-pencil fa-fw"></i>
+                <span> Front End Developer</span>
+              </div>
+              <div class="info-row">
+                <i class="fa fa-home fa-fw"></i>
+                <span> 10th of Ramadan</span>
+              </div>
+              <div class="info-row">
+                <i class="fa fa-birthday-cake fa-fw"></i>
+                <span> January 1, 2004</span>
+              </div>
+            </div>
+          </div>
+          <div class="activity">
+            <span>
+              <i class="fas fa-circle-notch fa-fw"></i>
+              My Groups
+            </span>
+            <span>
+              <i class="far fa-calendar-check fa-fw"></i>
+              My Events
+            </span>
+            <span>
+              <i class="fa fa-camera fa-fw"></i>
+              My Photos
+            </span>
+          </div>
+          <div class="interests">
+            <p>Interests</p>
+            <p>
+              <span>News</span>
+              <span>Sport</span>
+              <span>Games</span>
+              <span>Friends</span>
+              <span>Food</span>
+              <span>Design</span>
+              <span>Art</span>
+              <span>Photos</span>
+            </p>
+          </div>
+        </div>
+        <div class="mid-row">
+          <div class="publish">
+            <p>Social Media template by High 5</p>
+            <form>
+              <input type="text" placeholder="Write Your Feeling" />
+              <button><i class="fa fa-pencil"></i> Post</button>
+            </form>
+          </div>
+          <div class="post">
+            <div class="name">
+              <img src="imgs/team-2.jpg" alt="Image" />
+              <span>Ziad Hany</span>
+              <span>now</span>
+            </div>
+
+            <div class="details">
+              <p>
+                "The only way to do great work is to love what you do." – Steve
+                Jobs
+              </p>
+              <div class="images">
+                <img style="width: 100%" src="imgs/nature.jpg" alt="" />
+              </div>
+              <div class="btns">
+                <button class="like">
+                  <i class="fa-solid fa-thumbs-up"></i>Like
+                </button>
+                <button class="comment">
+                  <i class="fa-solid fa-comment"></i>Comment
+                </button>
+              </div>
+
+              <input type="text" placeholder="Write A Comment" />
+              <div class="send">Send</div>
+            </div>
+          </div>
+          <div class="post">
+            <div class="name">
+              <img src="imgs/team-3.jpg" alt="Image" />
+              <span>Said Fawzy</span>
+              <span>2 hr</span>
+            </div>
+
+            <div class="details">
+              <p>
+                "Success is not final, failure is not fatal: It is the courage
+                to continue that counts." – Winston Churchill
+              </p>
+              <div class="images">
+                <img style="width: 49%" src="imgs/lights.jpg" alt="" />
+                <img style="width: 49%" src="imgs/nature.jpg" alt="" />
+              </div>
+              <div class="btns">
+                <button class="like">
+                  <i class="fa-solid fa-thumbs-up"></i>Like
+                </button>
+                <button class="comment">
+                  <i class="fa-solid fa-comment"></i>Comment
+                </button>
+              </div>
+              <input type="text" placeholder="Write A Comment" class="appear" />
+              <div class="send">Send</div>
+            </div>
+          </div>
+
+          <!-- Start Slider -->
+          <div class="people-slider">
+            <h2>People You May Know</h2>
+            <div class="slider-container">
+              <div class="slider">
+                <!-- Profile 1 -->
+                <div class="profile-card">
+                  <img src="imgs/friend-3.jpg" alt="Profile 1" />
+                  <h3>Ziad Emad</h3>
+                  <div class="add-remove">
+                    <button class="add">Add</button>
+                    <button class="remove">Remove</button>
+                  </div>
+                </div>
+                <!-- Profile 2 -->
+                <div class="profile-card">
+                  <img src="imgs/friend-2.jpg" alt="Profile 2" />
+                  <h3>Mohamed Khaled</h3>
+                  <div class="add-remove">
+                    <button class="add">Add</button>
+                    <button class="remove">Remove</button>
+                  </div>
+                </div>
+                <!-- Profile 3 -->
+                <div class="profile-card">
+                  <img src="imgs/friend-6.jpg" alt="Profile 3" />
+                  <h3>Mahmoud Khater</h3>
+                  <div class="add-remove">
+                    <button class="add">Add</button>
+                    <button class="remove">Remove</button>
+                  </div>
+                </div>
+                <!-- Profile 4 -->
+                <div class="profile-card">
+                  <img src="imgs/brother.jpg" alt="Profile 4" />
+                  <h3>Mohamed Elsayed</h3>
+                  <div class="add-remove">
+                    <button class="add">Add</button>
+                    <button class="remove">Remove</button>
+                  </div>
+                </div>
+                <!-- Add more profiles as needed -->
+              </div>
+            </div>
+          </div>
+          <!-- End Slider -->
+
+          <div class="post">
+            <div class="name">
+              <img src="imgs/team-4.jpg" alt="Image" />
+              <span>Samer Mohamed Farouk</span>
+              <span>10 hr</span>
+            </div>
+
+            <div class="details">
+              <p>
+                "I hope you live a life you’re proud of. If you find that you’re
+                not, I hope you have the strength to start all over again. Life
+                is not a straight line; it’s a series of loops and detours,
+                mistakes and discoveries. The courage to begin anew is a gift we
+                all have, but too often we forget. Every day offers a chance to
+                reinvent yourself, to make better choices, and to live with
+                greater purpose. Remember, it’s never too late to be who you
+                might have been." – F. Scott Fitzgerald
+              </p>
+
+              <div class="btns">
+                <button class="like">
+                  <i class="fa-solid fa-thumbs-up"></i>Like
+                </button>
+                <button class="comment">
+                  <i class="fa-solid fa-comment"></i>Comment
+                </button>
+              </div>
+              <input type="text" placeholder="Write A Comment" class="appear" />
+              <div class="send">Send</div>
+            </div>
+          </div>
+          <div class="post">
+            <div class="name">
+              <img src="imgs/team-5.jpg" alt="Image" />
+              <span>Ziad Mohamed Fawzy</span>
+              <span>12 hr</span>
+            </div>
+
+            <div class="details">
+              <p>
+                "it’s a series of loops and detours, mistakes and discoveries.
+                The courage to begin anew is a gift we all have, but too often
+                we forget. Every day offers a chance to reinvent yourself, to
+                make better choices, and to live with greater purpose. Remember,
+                it’s never too late to be who you might have been." – F. Scott
+                Fitzgerald
+              </p>
+
+              <div class="btns">
+                <button class="like">
+                  <i class="fa-solid fa-thumbs-up"></i>Like
+                </button>
+                <button class="comment">
+                  <i class="fa-solid fa-comment"></i>Comment
+                </button>
+              </div>
+              <input type="text" placeholder="Write A Comment" class="appear" />
+              <div class="send">Send</div>
+            </div>
+          </div>
+        </div>
+        <div class="right-row">
+          <div class="event">
+            <h3>Upcoming Events:</h3>
+            <img src="imgs/forest.jpg" alt="" />
+            <p>Holiday</p>
+            <span>Friday 15:00</span>
+            <span>Info</span>
+          </div>
+          <div class="request">
+            <p>Friend Request</p>
+            <img src="imgs/team-5.jpg" alt="" />
+            <span>Ziad Mohamed Fawzy</span>
+            <div class="request-btns">
+              <i class="fa-solid fa-check accept"></i>
+              <i class="fa-solid fa-times refuse"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
